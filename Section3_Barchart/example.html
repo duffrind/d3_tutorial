@@ -5,7 +5,9 @@
 		<title>D3: A true bar chart with SVG rects</title>
 		<script type="text/javascript" src="../d3.js"></script>
 		<style type="text/css">
-			/* No style rules here yet */		
+			rect {
+				fill: red;
+			}
 		</style>
 	</head>
 	<body>
@@ -15,9 +17,9 @@
 			var w = 500;
 			var h = 100;
 			var barPadding = 1;
-			
+
 			var dataset = [5, 2, 8, 1, 7];
-			
+
 			//Create SVG element
 			var svg = d3.select("body")
 						.append("svg")
@@ -38,7 +40,7 @@
 			   .attr("height", function(d) {
 			   		return d * 4;
 			   });
-			
+
 		</script>
 	</body>
 </html>
